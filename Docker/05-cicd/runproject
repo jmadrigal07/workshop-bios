@@ -1,0 +1,1 @@
+docker run -d --name bios-cicd -p 8180:3000 jmadrigal/nodejs-app-image
