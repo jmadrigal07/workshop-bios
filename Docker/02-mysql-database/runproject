@@ -1,0 +1,2 @@
+docker build -t mysql-demo .
+docker run --name my-mysql-container -e MYSQL_ROOT_PASSWORD=Bios123 -d mysql-demo
