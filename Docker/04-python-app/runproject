@@ -1,0 +1,2 @@
+docker build -t py-app .
+docker run py-app
