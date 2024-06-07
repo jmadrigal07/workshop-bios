@@ -43,7 +43,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.EC2_SSH_PORT }}
           script: |
-            ls -la
-            #cd ./Docker/05-cicd/
-            #git pull origin master
-            #./runproject
+            docker run -d --name bios-cicd -p 8180:3000 jmadrigal/nodejs-app-image
