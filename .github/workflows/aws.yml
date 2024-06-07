@@ -22,7 +22,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t nodejs-app-image ./Docker/03-nodejs-app/
-          docker tag my-docker-image:latest ${{ secrets.DOCKER_USERNAME }}/nodejs-app-image:latest
+          docker tag nodejs-app-image:latest ${{ secrets.DOCKER_USERNAME }}/nodejs-app-image:latest
 
       - name: Push Docker image to Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/nodejs-app-image:latest
